@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.text-primary {
+  color: #428de1;
+}
+
+.bg-primary {
+  background-color: #428de1;
+}
