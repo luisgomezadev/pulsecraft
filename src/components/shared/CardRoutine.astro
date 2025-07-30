@@ -1,0 +1,9 @@
+---
+const { title } = Astro.props;
+---
+<article class="border shadow py-8 px-6 bg-blue-950/10">
+  <h1 class="text-3xl text-blue-950 mb-7 font-bold">{title}</h1>
+  <div class="text-blue-950">
+    <slot />
+  </div>
+</article>

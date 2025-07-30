@@ -1,0 +1,25 @@
+---
+const { img, alt, title, href } = Astro.props;
+---
+
+<a href={href} class="border w-full h-full relative overflow-hidden block group">
+  <!-- Overlay oscuro que aparece en hover -->
+  <div
+    class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20"
+  >
+  </div>
+
+  <!-- Texto que aparece en hover -->
+  <div
+    class="z-30 absolute bottom-10 w-full text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4"
+  >
+    <h2 class="text-3xl">{title}</h2>
+  </div>
+
+  <!-- Imagen de fondo -->
+  <img
+    src={img}
+    class="object-cover w-full h-full absolute inset-0 group-hover:scale-110 transition-transform duration-300 z-10"
+    alt={alt}
+  />
+</a>

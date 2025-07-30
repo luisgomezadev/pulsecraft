@@ -1,0 +1,22 @@
+---
+const { title, description, img, alt } = Astro.props;
+---
+
+<a
+  href="/rutina/hombre/espalda"
+  class="p-6 border shadow bg-white/30 w-full h-96 relative group overflow-hidden block"
+>
+  <div
+    class="absolute inset-0 bg-black bg-opacity-80 z-20"
+  >
+  </div>
+  <div class="z-30 absolute bottom-10 left-0 w-full text-white text-center px-6">
+    <h2 class="text-4xl font-semibold mb-2 text-white">{title}</h2>
+    <p class="text-white text-xl">{description}</p>
+  </div>
+  <img
+    src={img}
+    class="object-cover w-full h-full absolute inset-0 group-hover:scale-110 transition-transform duration-300 z-10"
+    alt={alt}
+  />
+</a>

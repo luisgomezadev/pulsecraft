@@ -1,0 +1,116 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Section from '../../components/shared/Section.astro';
+import CardWorkout from '../../components/shared/CardWorkout.astro';
+import CardRoutine from '../../components/shared/CardRoutine.astro';
+---
+
+<Layout title="Rutinas para hombres">
+  <Section title="Rutinas ideales para hombres">
+    <p class="text-xl text-blue-950 mb-10">
+      Aquí encontrarás una selección de rutinas diseñadas especialmente para hombres que están
+      comenzando su entrenamiento físico.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-12">
+      <CardRoutine title="PPL (Empuje – Tirón – Piernas)">
+        <p class="mb-3 opacity-90">
+          PPL significa Push – Pull – Legs (Empuje – Tirón – Piernas) y es una de las rutinas más
+          populares para ganar fuerza y masa muscular. Consiste en dividir los entrenamientos según
+          el tipo de movimiento muscular:
+        </p>
+        <div class="mb-4">
+          <h2 class="text-xl font-semibold mb-2">Push (Empuje)</h2>
+          <p class="opacity-90">
+            Entrenas todos los músculos que empujan el peso lejos de tu cuerpo:
+          </p>
+          <ul class="list-disc pl-5 opacity-90">
+            <li>Pecho</li>
+            <li>Hombros (deltoides frontales y laterales)</li>
+            <li>Tríceps</li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <h2 class="text-xl opacity-100 font-semibold mb-2">Pull (Tirón)</h2>
+          <p class="opacity-90">Trabajas los músculos que jalan el peso hacia ti:</p>
+          <ul class="list-disc pl-5 opacity-90">
+            <li>Espalda</li>
+            <li>Bíceps</li>
+            <li>Trapecios</li>
+            <li>Deltoides posteriores</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl opacity-100 font-semibold mb-2">Legs (Piernas)</h2>
+          <p class="opacity-90">Enfocado completamente en el tren inferior:</p>
+          <ul class="list-disc pl-5 opacity-90">
+            <li>Cuádriceps</li>
+            <li>Isquiotibiales</li>
+            <li>Glúteos</li>
+            <li>Pantorrillas</li>
+          </ul>
+        </div>
+      </CardRoutine>
+      <CardRoutine title="Upper/Lower (Superior/Inferior)">
+        <p class="mb-3 opacity-90">
+          La rutina Upper/Lower divide los entrenamientos en dos grandes bloques:
+        </p>
+        <div class="mb-4">
+          <h2 class="text-xl opacity-100 font-semibold mb-2">Upper (Parte Superior)</h2>
+          <p class="opacity-90">Entrenas los músculos del torso y brazos:</p>
+          <ul class="list-disc pl-5 opacity-90">
+            <li>Pecho</li>
+            <li>Espalda</li>
+            <li>Hombros</li>
+            <li>Bíceps y Tríceps</li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <h2 class="text-xl opacity-100 font-semibold mb-2">Lower (Parte Inferior)</h2>
+          <p class="opacity-90">Enfocado en las piernas y glúteos:</p>
+          <ul class="list-disc pl-5 opacity-90">
+            <li>Cuádriceps</li>
+            <li>Isquiotibiales</li>
+            <li>Glúteos</li>
+            <li>Pantorrillas</li>
+          </ul>
+        </div>
+      </CardRoutine>
+    </div>
+    <p class="text-xl text-blue-950 mb-10">
+      A continuación, te presentamos una selección de ejercicios según la rutina que elijas seguir.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
+      <CardWorkout
+        title="Push (Empuje)"
+        description="Aqui te dejo una serie de ejercicios que puedes realizar en tu dia de empuje"
+        img="/pecho_hombre.webp"
+        alt="Imagen de pecho de hombre"
+      />
+      <CardWorkout
+        title="Pull (Tirón)"
+        description="Aqui te dejo una serie de ejercicios que puedes realizar en tu dia de tirón"
+        img="/espalda_gym.webp"
+        alt="Imagen de espalda de hombre"
+      />
+      <CardWorkout
+        title="Legs (Piernas)"
+        description="Aqui te dejo una serie de ejercicios que puedes realizar para tu dia de piernas"
+        img="/piernas_hombre.webp"
+        alt="Imagen de piernas de hombre"
+      />
+      <CardWorkout
+        title="Upper (Parte Superior)"
+        description="Aqui te dejo una serie de ejercicios que puedes realizar para tren superior"
+        img="/biceps_hombre.webp"
+        alt="Imagen de biceps de hombre"
+      />
+      <CardWorkout
+        title="Lower (Parte Inferior)"
+        description="Aqui te dejo una serie de ejercicios que puedes realizar para tren inferior"
+        img="/piernas_hombre.webp"
+        alt="Imagen de piernas de hombre"
+      />
+    </div>
+  </Section>
+</Layout>

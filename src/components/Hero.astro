@@ -2,34 +2,37 @@
 
 ---
 
-<section class="h-[650px] pt-20 bg-gradient-to-b from-gray-900 to-gray-800">
-  <div class="max-w-6xl mx-auto flex items-center justify-between h-full">
-    <div class="text-white">
-      <h1 class="text-6xl font-bold mb-4">
+<header class="h-[calc(100vh-64px)] py-12 px-4 bg-gradient-to-b from-gray-200 to-gray-300">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center h-full gap-x-10 gap-y-8">
+    <div class="text-blue-950 max-w-xl space-y-6">
+      <h1 class="text-6xl md:text-8xl font-bold mb-4 tracking-tighter">
         Bienvenido a Pulse <span class="text-primary">Craft</span>
       </h1>
-      <p class="text-lg mb-4">
+      <p class="text-2xl mb-4 text-pretty">
         Tu compañero para el entrenamiento ideal si eres principiante
       </p>
       <div class="flex gap-x-4">
         <a
-          href="/rutinas"
-          class="bg-primary hover:opacity-80 transition-opacity text-white font-semibold py-2 px-4 rounded"
+          href="#rutinas"
+          class="bg-primary border-2 border-primary hover:opacity-80 transition-opacity text-white font-semibold py-2 px-4"
           >Explorar Rutinas</a
         >
         <a
-          href="/ejercicios"
-          class="bg-primary hover:opacity-80 transition-opacity text-white font-semibold py-2 px-4 rounded"
+          href="#ejercicios"
+          class="bg-transparent border-2 border-primary hover:opacity-80 transition-opacity text-primary font-semibold py-2 px-4"
           >Ver Ejercicios</a
         >
       </div>
     </div>
-    <div>
-      <img
-        src="/man_hero.webp"
-        alt="Pulse Craft Logo"
-        class="w-100 h-auto mx-auto mask-b-from-80% mask-b-to-90%"
-      />
+    <div class="max-w-xl">
+      <img src="/person.png" alt="Pulse Craft Logo" class="w-full h-auto mx-auto mask-t-gradient" />
     </div>
   </div>
-</section>
+</header>
+
+<style scoped>
+  .mask-t-gradient {
+    mask-image: linear-gradient(to bottom, black 80%, transparent 90%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 90%);
+  }
+</style>

@@ -1,0 +1,37 @@
+---
+import Section from './shared/Section.astro';
+import RoutineCardGender from './shared/RoutineCardGender.astro';
+
+const { id } = Astro.props;
+---
+
+<Section title="Rutinas" id={id}>
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-12">
+    <div class="md:col-span-2">
+      <p class="text-3xl md:text-6xl text-pretty">
+        Elige tu género para descubrir las rutinas ideales si estás comenzando en el mundo del
+        entrenamiento.
+      </p>
+    </div>
+
+    <div class="flex gap-8 md:col-span-3">
+      <div class="flex-1 flex md:flex-row flex-col justify-center items-center h-[35em]">
+        <RoutineCardGender
+          img="/hombre_gym.png"
+          alt="Imagen de hombre en el gym"
+          title="Rutinas ideales para hombres"
+          href="/rutinas/hombre"
+        />
+      </div>
+
+      <div class="flex-1 justify-center items-center h-[35em]">
+        <RoutineCardGender
+          img="/mujer_gym.png"
+          alt="Imagen de mujer en el gym"
+          title="Rutinas ideales para mujeres"
+          href="/rutinas/mujer"
+        />
+      </div>
+    </div>
+  </div>
+</Section>
